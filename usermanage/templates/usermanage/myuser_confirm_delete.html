@@ -1,0 +1,15 @@
+{% extends "usermanage/base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <p>Are You sure?</p>
+                    <input type="submit" value="Delete">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
